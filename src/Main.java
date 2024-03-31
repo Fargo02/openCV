@@ -7,6 +7,15 @@ public class Main {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         System.out.println(Core.VERSION);
 
+        int a = 0;
+
+        while (true) {
+            a++;
+            System.out.println(a);
+            if (a == 3) {
+                break;
+            }
+        }
 
         System.out.println("dima");
     }
