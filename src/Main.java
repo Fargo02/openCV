@@ -7,5 +7,7 @@ public class Main {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         System.out.println(Core.VERSION);
 
+
+        System.out.println("Дима топ, но не совсем");
     }
 }
