@@ -8,11 +8,10 @@ public class Main {
     public static void main(String[] args) {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
-        CascadeClassifier faceDetector
-                = new CascadeClassifier();
-        faceDetector.load("C:/Users/Nikita/IdeaProjects/openCV/src/resources/haarcascade_frontalface_alt.xml");
+        CascadeClassifier faceDetector = new CascadeClassifier();
+        faceDetector.load("src/resources/haarcascade_frontalface_alt.xml");
 
-        Mat image = Imgcodecs.imread("C:/Users/Nikita/IdeaProjects/openCV/src/resources/dima.jpg");
+        Mat image = Imgcodecs.imread("src/resources/girl.jpg");
 
         // Detecting faces
         MatOfRect faceDetections = new MatOfRect();
