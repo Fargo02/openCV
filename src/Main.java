@@ -12,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
+
         Rect rectCrop = null;
         Tesseract tesseract = new Tesseract();
         CascadeClassifier faceDetector = new CascadeClassifier();
@@ -19,6 +20,10 @@ public class Main {
 
         faceDetector.load("src/resources/haarcascade_russian_plate_number.xml");
         Mat image = Imgcodecs.imread("src/resources/bmw.jpg");
+        CascadeClassifier faceDetector = new CascadeClassifier();
+        faceDetector.load("src/resources/haarcascade_frontalface_alt.xml");
+
+        Mat image = Imgcodecs.imread("src/resources/girl.jpg")
 
         // Detecting faces
         MatOfRect faceDetections = new MatOfRect();
